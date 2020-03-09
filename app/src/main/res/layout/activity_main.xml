@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.keith.viewpager_demo.MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#77000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent">
+    </androidx.viewpager2.widget.ViewPager2>
 
-</RelativeLayout>
+</LinearLayout>
